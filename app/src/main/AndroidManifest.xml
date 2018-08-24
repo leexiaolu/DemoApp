@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.TwowayActivity"></activity>
+        <activity android:name=".ui.TwowayActivity" />
+        <activity android:name=".ui.CustomActivity"/>
     </application>
 
 </manifest>

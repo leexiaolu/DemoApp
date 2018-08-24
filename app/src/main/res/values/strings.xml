@@ -2,4 +2,5 @@
     <string name="app_name">DemoApp</string>
     <string name="button_recycler_view">recyclerView</string>
     <string name="button_two_way">two_way</string>
+    <string name="button_custom">custom</string>
 </resources>

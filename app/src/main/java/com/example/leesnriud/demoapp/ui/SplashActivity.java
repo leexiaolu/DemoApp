@@ -9,6 +9,9 @@ import com.example.leesnriud.demoapp.R;
 import com.example.leesnriud.demoapp.databinding.ActivitySplashBinding;
 import com.example.leesnriud.demoapp.viewmodel.SplashViewModel;
 
+/**
+ * 
+ */
 public class SplashActivity extends AppCompatActivity {
 
     ActivitySplashBinding binding;

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="android.widget.EditText"/>
+
         <variable
             name="model"
             type="com.example.leesnriud.demoapp.viewmodel.TwowayViewModel"/>
@@ -17,6 +20,25 @@
             android:layout_height="wrap_content"
             android:text="@={model.name}"
             android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                app:checkStauts="@{model.check}"/>
+
+            <CheckBox
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="@={model.check}"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"

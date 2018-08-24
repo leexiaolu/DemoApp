@@ -20,6 +20,6 @@ public class TwowayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_twoway);
-        binding.setModel(new TwowayViewModel("lee"));
+        binding.setModel(new TwowayViewModel());
     }
 }

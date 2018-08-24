@@ -3,7 +3,7 @@
     <data>
         <variable
             name="user"
-            type="com.example.leesnriud.demoapp.User"/>
+            type="com.example.leesnriud.demoapp.model.User"/>
         <variable
             name="persenter"
             type="com.example.leesnriud.demoapp.UserPersenter"/>

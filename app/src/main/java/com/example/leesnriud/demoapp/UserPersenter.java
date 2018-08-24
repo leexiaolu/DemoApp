@@ -3,6 +3,8 @@ package com.example.leesnriud.demoapp;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.leesnriud.demoapp.model.User;
+
 public class UserPersenter {
 
     public void onClick(View view,User user) {

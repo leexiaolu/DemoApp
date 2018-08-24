@@ -27,7 +27,7 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
-    
+
     dataBinding {
         enabled = true
     }
@@ -43,6 +43,8 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:support-v4:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     testImplementation 'junit:junit:4.12'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31'
 
@@ -91,12 +93,11 @@ dependencies {
     implementation "com.uber.autodispose:autodispose-ktx:$autodispose_version"
     implementation "com.uber.autodispose:autodispose-android-archcomponents-ktx:$autodispose_version"
 
-
     // Timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
     // AWS Cognito
-    implementation ('com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.6.+')
+    implementation('com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.6.+')
 
     // EventBus for message deliver
     implementation 'org.greenrobot:eventbus:3.1.1'

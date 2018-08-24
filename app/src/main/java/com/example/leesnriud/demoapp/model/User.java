@@ -1,4 +1,4 @@
-package com.example.leesnriud.demoapp;
+package com.example.leesnriud.demoapp.model;
 
 public class User {
 
@@ -7,4 +7,5 @@ public class User {
     public User(String name) {
         this.name = name;
     }
+
 }

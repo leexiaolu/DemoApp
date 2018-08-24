@@ -1,10 +1,14 @@
-package com.example.leesnriud.demoapp;
+package com.example.leesnriud.demoapp.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.example.leesnriud.demoapp.BR;
+import com.example.leesnriud.demoapp.R;
+import com.example.leesnriud.demoapp.UserPersenter;
+import com.example.leesnriud.demoapp.model.User;
 
 import java.util.List;
 

@@ -4,18 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import timber.log.Timber;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.example.leesnriud.demoapp.adapter.UserAdapter;
 import com.example.leesnriud.demoapp.databinding.ActivityMainBinding;
+import com.example.leesnriud.demoapp.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * dataBinding + recyclerView
+ */
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding activityMainBinding;
@@ -56,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 Toast.makeText(MainActivity.this,"item 点击事件",Toast.LENGTH_LONG).show();
+                Timber.e("item被点击了");
             }
         });
 

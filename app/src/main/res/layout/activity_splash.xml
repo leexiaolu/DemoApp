@@ -5,7 +5,7 @@
 
     <data>
         <variable
-            name="splashviewmodel"
+            name="model"
             type="com.example.leesnriud.demoapp.viewmodel.SplashViewModel"/>
     </data>
 
@@ -18,13 +18,20 @@
                 android:text="@string/button_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="@{(view) -> splashviewmodel.recyclerViewClick(view)}"/>
+                android:onClick="@{(view) -> model.recyclerViewClick(view)}"/>
 
             <Button
                 android:text="@string/button_two_way"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="@{(view) -> splashviewmodel.twowayClick(view)}"/>
+                android:onClick="@{(view) -> model.twowayClick(view)}"/>
+
+            <Button
+                android:text="@string/button_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> model.customClick(view)}"/>
+
 
     </LinearLayout>
 </layout>

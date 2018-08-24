@@ -18,5 +18,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_splash);
         binding.setModel(new SplashViewModel());
+        // 
     }
 }
